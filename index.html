@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jose Lopez – Link in Bio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+body { font-family: 'Manrope', sans-serif; }
+
+.text-gradient {
+background: linear-gradient(180deg, #ffffff 0%, #9ca3af 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.fade-up {
+opacity: 0;
+transform: translateY(30px);
+transition: all 0.9s ease;
+}
+.fade-up.show {
+opacity: 1;
+transform: translateY(0);
+}
+</style>
+</head>
+
+<body class="text-white antialiased min-h-screen"
+style="background: radial-gradient(circle at top, #111 0%, #000 45%);">
+
+<div class="max-w-2xl mx-auto px-6 py-24">
+
+<!-- HERO -->
+<div class="text-center mb-16 fade-up">
+<h1 class="text-4xl md:text-6xl font-light tracking-tight mb-4 text-gradient">
+Aprende a importar, <br>
+ construye tu negocio.
+</h1>
+
+<p class="text-lg md:text-xl text-gray-400 font-light">
+Conectando China con el mundo.
+</p>
+</div>
+
+<!-- REDES -->
+<div class="flex justify-center gap-3 mb-16 fade-up">
+
+<a href="https://www.youtube.com/@Joseduardos" target="_blank"
+class="inline-flex items-center gap-2 px-4 py-2 bg-[#111] hover:bg-[#161616] rounded-full backdrop-blur-xl shadow-lg transition">
+<i class="fab fa-youtube text-[#ff0000]"></i>
+<span class="text-sm text-gray-300">/joseduardos</span>
+</a>
+
+<a href="https://www.tiktok.com/@joseduardo_yt" target="_blank"
+class="inline-flex items-center gap-2 px-4 py-2 bg-[#111] hover:bg-[#161616] rounded-full backdrop-blur-xl shadow-lg transition">
+<i class="fab fa-tiktok text-cyan-400 drop-shadow-[1px_1px_0_#ff0050]"></i>
+<span class="text-sm text-gray-300">@joseduardo_yt</span>
+</a>
+
+<a href="https://www.instagram.com/joseduardols" target="_blank"
+class="inline-flex items-center gap-2 px-4 py-2 rounded-full backdrop-blur-xl shadow-lg transition
+bg-gradient-to-tr from-[#feda75] via-[#d62976] to-[#4f5bd5]">
+<i class="fab fa-instagram text-white"></i>
+<span class="text-sm text-white">@joseduardols</span>
+</a>
+
+</div>
+
+<!-- CARD -->
+<div class="space-y-4 fade-up">
+
+<a href="https://tally.so/r/jaoBXR"
+class="group flex items-center gap-5 p-6 rounded-2xl transition hover:scale-[1.015]
+bg-white/10 backdrop-blur-2xl shadow-[0_20px_60px_rgba(0,0,0,0.7)]">
+
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-lg">
+<i class="fas fa-briefcase text-black text-lg"></i>
+</div>
+
+<div class="flex-1">
+<p class="text-base text-gray-100 mb-1">Trabaja conmigo</p>
+<p class="text-sm text-gray-300">Acompañamiento personalizado para importar y construir tu marca</p>
+</div>
+
+<div>
+<span class="px-4 py-2 bg-white/10 text-gray-100 text-sm rounded-lg backdrop-blur-xl transition group-hover:bg-white/20">
+Aplicar
+</span>
+</div>
+
+</a>
+
+</div>
+
+<!-- FOOTER -->
+<div class="text-center mt-24 fade-up">
+<p class="text-sm text-gray-500">© 2026 Jose Lopez</p>
+</div>
+
+</div>
+
+<script>
+const items = document.querySelectorAll('.fade-up');
+items.forEach((el, i) => {
+setTimeout(() => { el.classList.add('show'); }, i * 150);
+});
+</script>
+
+</body>
+</html>
