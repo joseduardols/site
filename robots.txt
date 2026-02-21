@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://latamsourcin.com/sitemap.xml
+Sitemap: https://joseduardols.com/sitemap.xml
